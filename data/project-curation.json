@@ -1,0 +1,114 @@
+{
+  "AutoEvolve": {
+    "order": 1,
+    "featured": true,
+    "category": "AI Agent",
+    "status": "活跃开发",
+    "summary": "面向提示词与工具型 AI Skill 的工作区原生自进化框架。",
+    "tech": ["Python", "LangGraph", "FastAPI", "React", "TypeScript"]
+  },
+  "ThoughtRelay": {
+    "order": 2,
+    "featured": true,
+    "category": "AI Agent",
+    "status": "研究原型",
+    "summary": "在不同 LLM Agent 之间传递 KV-cache 与注意力状态，探索跨模型上下文复用。",
+    "tech": ["Python", "KV-cache", "FastAPI", "vLLM", "Ollama"]
+  },
+  "ARag": {
+    "order": 3,
+    "featured": true,
+    "category": "RAG",
+    "status": "完整项目",
+    "summary": "覆盖文档摄取、意图检索、多模型路由、流式对话与链路追踪的全栈 RAG 平台。",
+    "tech": ["Java", "Spring Boot", "React", "Redis", "Milvus", "MCP"]
+  },
+  "MiniCoze": {
+    "order": 4,
+    "featured": true,
+    "category": "AI Agent",
+    "status": "完整项目",
+    "summary": "基于 Spring AI 与 Vue 的可配置 Agent 编排平台，支持工作流、RAG 和 MCP 工具。",
+    "tech": ["Java", "Spring AI", "Vue 3", "PostgreSQL", "MCP"]
+  },
+  "CodeIndex": {
+    "order": 5,
+    "featured": true,
+    "category": "RAG",
+    "status": "实验项目",
+    "summary": "结合 Vue 3、FastAPI 与 PageIndex 的文档索引和 reasoning-based RAG 问答应用。",
+    "tech": ["Python", "FastAPI", "Vue 3", "PageIndex"]
+  },
+  "RGUI": {
+    "order": 6,
+    "featured": true,
+    "category": "开发工具",
+    "status": "可用工具",
+    "summary": "把 ripgrep 的检索能力封装为跨平台桌面全文搜索工具。",
+    "tech": ["Python", "CustomTkinter", "ripgrep"]
+  },
+  "LuckyShoot": {
+    "order": 7,
+    "featured": false,
+    "category": "后端工程",
+    "status": "工程实践",
+    "summary": "采用 DDD、Spring Boot 与 Vue 构建的营销抽奖和账户额度系统。",
+    "tech": ["Java", "Spring Boot", "Vue 3", "Redis", "RabbitMQ", "DDD"]
+  },
+  "market": {
+    "order": 8,
+    "featured": false,
+    "category": "后端工程",
+    "status": "工程实践",
+    "summary": "面向优惠券秒杀场景的高并发商城，覆盖 Redis、MQ、限流、压测和可观测性。",
+    "tech": ["Java", "Spring Boot", "Redis", "RabbitMQ", "Nacos", "Sentinel"]
+  },
+  "battery-warning-system": {
+    "order": 9,
+    "featured": false,
+    "category": "后端工程",
+    "status": "工程实践",
+    "summary": "基于 Spring Boot、Dubbo 与 Nacos 的新能源汽车电池微服务预警系统。",
+    "tech": ["Java", "Spring Boot", "Dubbo", "Nacos", "RocketMQ"]
+  },
+  "examsystem": {
+    "order": 10,
+    "featured": false,
+    "category": "Web 应用",
+    "status": "完整项目",
+    "summary": "使用 Go、React 与 SQLite 构建的题库管理和 AI 出题系统。",
+    "tech": ["Go", "React", "TypeScript", "SQLite"]
+  },
+  "douban_top250": {
+    "order": 11,
+    "featured": false,
+    "category": "数据应用",
+    "status": "数据项目",
+    "summary": "豆瓣电影 Top 250 数据采集、Streamlit 展示与可视化分析。",
+    "tech": ["Python", "Streamlit", "pandas", "Altair"]
+  },
+  "MusicPlayer": {
+    "order": 12,
+    "featured": false,
+    "category": "桌面应用",
+    "status": "历史项目",
+    "summary": "基于 PySide2 与 pygame 的桌面音乐搜索、下载和播放应用。",
+    "tech": ["Python", "PySide2", "pygame"]
+  },
+  "CS144": {
+    "order": 13,
+    "featured": false,
+    "category": "学习实践",
+    "status": "学习项目",
+    "summary": "Stanford CS144 计算机网络实验工作区，使用 C++ 与 CMake。",
+    "tech": ["C++20", "CMake", "Network Protocols"]
+  },
+  "weather.io": {
+    "order": 14,
+    "featured": false,
+    "category": "Web 应用",
+    "status": "轻量项目",
+    "summary": "使用原生 HTML、CSS 和 JavaScript 构建的 OpenWeatherMap 天气查询页面。",
+    "tech": ["HTML", "CSS", "JavaScript", "OpenWeatherMap"]
+  }
+}

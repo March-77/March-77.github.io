@@ -1,0 +1,38 @@
+name: Sync public portfolio data
+
+on:
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh public GitHub data
+        run: node scripts/sync-portfolio.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changed snapshot
+        run: |
+          if git diff --quiet -- data/portfolio.json; then
+            echo "Portfolio data is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/portfolio.json
+          git commit -m "chore: refresh public portfolio data"
+          git push

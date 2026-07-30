@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title>开源贡献</title>
+    <link href="/contributions/"/>
+    <url>/contributions/</url>
+    <content type="html"><![CDATA[March-77 提交到外部公开仓库并已被维护者合并的 Pull Request，包括精选贡献、上游仓库分组和完整合并记录。]]></content>
+  </entry>
+
+  <entry>
+    <title>个人作品</title>
+    <link href="/projects/"/>
+    <url>/projects/</url>
+    <content type="html"><![CDATA[March-77 主导的 AI Agent、RAG、后端工程、开发工具、数据应用与学习项目，包含技术栈、状态、许可证和 GitHub 链接。]]></content>
+  </entry>
   
   
   
