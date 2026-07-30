@@ -33,7 +33,7 @@
       "hostname": "march-77.github.io",
       "root": "/",
       "version": "1.9.5",
-      "typing": {"enable": false, "typeSpeed": 70, "cursorChar": "_", "loop": false},
+      "typing": {"enable": true, "typeSpeed": 70, "cursorChar": "_", "loop": false},
       "anchorjs": {"enable": false},
       "progressbar": {"enable": true, "height_px": 3, "color": "#29d", "options": {"showSpinner": false, "trickleSpeed": 100}},
       "code_language": {"enable": false},
@@ -53,14 +53,14 @@
 <body>
   <a class="portfolio-skip-link" href="#main-content">跳到主要内容</a>
   <header>
-    <div class="header-inner portfolio-header">
+    <div class="header-inner" style="height: 60vh;">
       <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" aria-label="主导航">
         <div class="container">
           <a class="navbar-brand" href="/"><strong>Hello_ZZR!</strong></a>
           <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
                   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                   aria-expanded="false" aria-label="展开或收起导航">
-            <span class="animated-icon"><span></span><span></span><span></span></span>
+            <div class="animated-icon"><span></span><span></span><span></span></div>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto text-center">
@@ -93,13 +93,14 @@
           </div>
         </div>
       </nav>
-      <div id="banner" class="banner" parallax="true"
+      <div id="banner" class="banner" parallax=true
            style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
         <div class="full-bg-img">
-          <div class="mask flex-center portfolio-banner-mask">
+          <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
             <div class="banner-text text-center fade-in-up">
-              <h1 class="h2">开源贡献</h1>
-              <p class="portfolio-banner-subtitle">Merged upstream, documented in public.</p>
+              <div class="h2">
+                <span id="subtitle" data-typed-text="开源贡献"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -264,6 +265,15 @@
   <script src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
   <script src="/js/events.js"></script>
   <script src="/js/plugins.js"></script>
+  <script src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js"></script>
+  <script>
+    (function(window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById("subtitle");
+      if (!subtitle || !typing) return;
+      typing(subtitle.getAttribute("data-typed-text"));
+    })(window, document);
+  </script>
   <script src="/js/local-search.js"></script>
   <script src="/js/portfolio.js"></script>
   <script src="/js/boot.js"></script>

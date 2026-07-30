@@ -27,28 +27,6 @@
   top: 0;
 }
 
-.portfolio-header {
-  height: 48vh !important;
-  min-height: 340px;
-  max-height: 540px;
-}
-
-.portfolio-header .animated-icon {
-  display: block;
-}
-
-.portfolio-banner-mask {
-  background-color: rgba(16, 28, 46, 0.48) !important;
-}
-
-.portfolio-banner-subtitle {
-  margin: 0.75rem 0 0;
-  color: rgba(255, 255, 255, 0.82);
-  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
-  font-size: clamp(0.78rem, 2vw, 0.94rem);
-  letter-spacing: 0.04em;
-}
-
 .portfolio-page *,
 .portfolio-page *::before,
 .portfolio-page *::after {
@@ -651,11 +629,6 @@
 }
 
 @media (max-width: 767.98px) {
-  .portfolio-header {
-    height: 42vh !important;
-    min-height: 280px;
-  }
-
   .portfolio-page {
     padding: 0 0 0.5rem;
   }
